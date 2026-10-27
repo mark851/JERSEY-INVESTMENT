@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JERSEY INVESTMENT</title>
+    <script>
+      // Single Page Application redirect for GitHub Pages
+      // Redirects 404 queries back to root path retaining query parameters
+      const pathSegments = window.location.pathname.split('/').filter(Boolean);
+      const repoName = pathSegments.length > 0 ? '/' + pathSegments[0] : '';
+      const target = window.location.origin + repoName + '/' + window.location.search + window.location.hash;
+      window.location.replace(target);
+    </script>
+  </head>
+  <body style="font-family: sans-serif; text-align: center; padding: 40px; background-color: #0b1626; color: #fff;">
+    <p>Redirecting to Jersey Investment...</p>
+    <a href="./" style="color: #38bdf8;">Click here if not redirected</a>
+  </body>
+</html>
